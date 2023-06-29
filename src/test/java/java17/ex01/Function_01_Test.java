@@ -23,7 +23,7 @@ public class Function_01_Test {
     // TODO l'age sera de la forme "<ENTIER>"
     // TODO le mot de passe sera de la forme "pass_<ENTIER>"
     private Function<Integer, Person> intToPerson =
-            (entier)->new Person(String.format("first_%d", entier),
+            (entier) -> new Person(String.format("first_%d", entier),
                     String.format("last_%d", entier),
                     entier,
                     String.format("pass_%d", entier));
