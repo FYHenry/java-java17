@@ -68,10 +68,14 @@ public class Function_04_Test {
 
         // TODO invoquer la méthode filter pour que le test soit passant
         // TODO chaîner les prédicats adult, lastnameIsFrance et firstnameIsArmor avec la méthode and
-        List<Person> result = personList
+        /*List<Person> result = personList
                 .stream()
                 .filter(firstnameIsArmor)
                 .filter(lastnameIsFrance)
+                .toList();*/
+        List<Person> result = personList
+                .stream()
+                .filter(firstnameIsArmor.and(lastnameIsFrance))
                 .toList();
 
         assert result.size() == 1;
