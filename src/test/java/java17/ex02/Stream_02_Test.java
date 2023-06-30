@@ -24,7 +24,7 @@ public class Stream_02_Test {
 		List<Order> orders = new Data().getOrders();
 
 		// TODO Trouver la liste des clients associés aux commandes
-		List<Customer> result = null;
+		List<Customer> result = orders.stream().map();
 
 		assertThat(result, hasSize(8));
 	}
